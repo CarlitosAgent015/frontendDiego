@@ -1,0 +1,345 @@
+/* Variables CSS */
+:root {
+    --primary-color: rgb(144, 199, 244);
+    --secondary-color: white;
+    --font-size: 16px;
+    --padding: 20px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(245, 245, 245, 0.875);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: var(--padding);
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: var(--font-size);
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(31, 29, 29, 0.685);
+    font-weight: bold;
+}
+
+/* Estilos de dropdown */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.configuracion-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.configuracion-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.configuracion-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .configuracion-content {
+    display: block;
+}
+
+.servicios-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.servicios-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.servicios-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .servicios-content {
+    display: block;
+}
+
+.ordenes-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.ordenes-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.ordenes-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .ordenes-content {
+    display: block;
+}
+
+.tecnicos-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.tecnicos-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.tecnicos-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .tecnicos-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos de main */
+main {
+    margin: var(--padding);
+    padding: var(--padding);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.status {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 15%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+.search-container button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos de tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+
+table, th, td {
+    border: 2px solid #ddd;
+}
+
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    color: black;
+}
+
+
+th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+/* Estilos de footer */
+
+footer {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si la pantalla es pequeña */
+    justify-content: space-between;
+    align-items: center;
+}
+
+form label {
+    flex: 1 1 45%; /* Cada etiqueta ocupa el 45% del ancho disponible */
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input[type="text"],
+form input[type="checkbox"] {
+    width: 60%; /* El input ocupa el 60% del espacio de su contenedor */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+form button {
+    background-color: #0288D1; /* Azul más oscuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #0277BD;
+}
+
+#regresar {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4FC3F7;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3 ease;
+}
+
+#regresar:hover {
+    background-color: #0288D1;
+}
+
+#regresar:active {
+    background-color: #0277BD;
+}
+
+#crearRol {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4FC3F7;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3 ease;
+}
+
+#crearRol:hover {
+    background-color: #0288D1;
+}
+
+#crearRol:active {
+    background-color: #0277BD;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Permiso</title>
+    <link rel="stylesheet" href="../public/styles/permiso.css">
+</head>
+<body onload="editPermiso()">
+    <header>
+        <h1>ConstruCode</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li class="dropdown" aria-haspopup="true">
+                    <a href="#">Tecnicos</a>
+                    <ul class="tecnicos-content">
+                        <li><a href="../tecnicos/tecnicos.html">Tecnicos</a></li>
+                        <li><a href="../categoriaTecnicos/categoriaT.html">Categoria de Tecnicos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" aria-haspopup="true">
+                    <a href="#">Orden de Servicio</a>
+                    <ul class="ordenes-content">
+                        <li><a href="../ordenServicio/createOrder.html">Orden de Servicio</a></li>
+                        <li><a href="../cliente/cliente.html">Clientes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" aria-haspopup="true">
+                    <a href="#">Servicios</a>
+                    <ul class="servicios-content">
+                        <li><a href="../servicios/servicios.html">Servicios</a></li>
+                        <li><a href="../cateogira_servicios/categoriaS.html">Categoria de Servicios</a></li>
+                    </ul>
+                </li>
+                <li><a href="../usuarios/usuarios.html">Usuarios</a></li>
+                <li class="dropdown" aria-haspopup="true">
+                    <a href="#">Configuración</a>
+                    <ul class="configuracion-content">
+                        <li><a href="../roles/roles.html">Roles</a></li>
+                        <li><a href="../permisos/permisos.html">Permisos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        <label for="idPermiso" id="idPerm">ID Permiso:</label>
+        <input type="number" id="idPermiso" readonly> <!-- Solo lectura -->
+        <br>
+
+        <label for="nombre" id="nombrePermiso">Nombre:</label>
+        <input type="text" id="nombre">
+        <br>
+
+        <label for="descripcion" id="descripcionPermiso">Descripción:</label>
+        <input type="text" id="descripcion">
+        <br>
+
+        <label for="estado" id="estadoPermiso">Estado:</label>
+        <input type="checkbox" id="estado"> <!-- Checkbox para el estado -->
+        <br>
+
+        <button type="button" id="btnAgregar" onclick="updatePermiso()">Actualizar Permiso</button>
+    </form>
+
+    <script src="../public/js/functionsPermiso.js"></script>
+    <a id="regresar" href="listPermiso.html">Regresar</a>
+    <footer>
+    <p>ConstruCode - Roles</p>
+    </footer>
+</body>
+</html>
